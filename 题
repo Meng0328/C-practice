@@ -6,7 +6,7 @@ int main()
 	int n = 0;
 	int sum = 0;
 	printf("请输入n的值:");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	sum = add(n);
 	if (sum == -1)
 	{
