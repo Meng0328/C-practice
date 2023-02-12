@@ -1,3 +1,4 @@
+//一维数组
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #define SIZE 5
@@ -25,5 +26,36 @@ void output(int a[], int len)
 	for (i = 0; i < len; i++)
 	{
 		printf("第%d个的数据：%d\n", i + 1, a[i]);
+	}
+}
+
+
+//二维数组
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#define M 3
+#define N 4
+int main()
+{
+	int arr[M][N] = { {1,4,7,10},{2,5,8,11},{3,6,9,12} };
+	int i = 0;
+	int j = 0;
+	//按行操作
+	for (i = 0; i < M; i++)
+	{
+		for (j = 0; j < N; j++)
+		{
+			printf("%d\t", arr[M][N]);
+		}
+		printf("\n");
+	}
+	//按列操作
+	for (j = 0; j < N; j++)for (i = 0; i < M; i++)
+	{
+		for (i = 0; i < M; i++)
+		{
+			printf("%d\t", arr[M][N]);
+		}
+		printf("\n");
 	}
 }
