@@ -90,6 +90,13 @@ void output(int b[M][N],int row,int column)
  }
 
 //结构体数组
+#include <stdio.h>
+#define N 5
+typedef struct student
+{
+	int num;
+	int score;
+}STU;
 int main()
 {
 	STU class2[N] = { {1,90},{2,95},{3,98} };
