@@ -36,3 +36,39 @@ int add(int n)
 	return s;
 
 }
+//阶乘有问题，待改动
+//阶乘有问题，待改动
+#include <stdio.h>
+int num(int n);
+int main()
+{
+	int m = 0;
+	int s = 0;
+	printf("请输入n的值：");
+	scanf_s("%d", &m);
+	s = num(m);
+	if (s == -1)
+	{
+		printf("请输入正确的值\n");
+	}
+	else
+	{
+		printf("%d的阶乘为：%d\n", m, s);
+	}
+	return 0;
+}
+int num(int n)
+{
+	int i = 0;
+	int sum = 0;
+	if (n < 1)
+	{
+		printf("WRONG\n");
+		return -1;
+	}
+	for (i = 1; i <=n; i++)
+	{
+		sum = sum * i;
+	}
+	return sum;
+}
